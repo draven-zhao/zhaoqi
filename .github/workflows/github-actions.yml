@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          cat /etc/hosts
+          cat /etc/hosts && ls /
