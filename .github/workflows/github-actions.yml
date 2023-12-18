@@ -8,22 +8,22 @@ jobs:
       - name: List files in the repository
         run: |
           cat /etc/hosts && ls /
-      - name: Get latest code
-        uses: actions/checkout@v3 # 拉取项目代码
-      - name: Setup node
-        uses: actions/setup-node@v3 # 安装node
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.com/
-      - name: install package
-        run: npm i # 安装项目依赖
-      - name: build
-        run: npm run build # 编译
-      - name: pack
-        run: zip -q -r dist.zip ./dist # 打包成zip
-      - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4 # 上传到ftp服务器
-        with:
-          server: 10.52.0.x # 服务器地址
-          username: testusername # 服务器用户名
-          password: ${{ secrets.ftp_password }} # 服务器密码
+      #- name: Get latest code
+      #  uses: actions/checkout@v3 # 拉取项目代码
+      #- name: Setup node
+      #  uses: actions/setup-node@v3 # 安装node
+      #  with:
+      #    node-version: 18
+      #    registry-url: https://registry.npmjs.com/
+      #- name: install package
+      #  run: npm i # 安装项目依赖
+      #- name: build
+      #  run: npm run build # 编译
+      #- name: pack
+      #  run: zip -q -r dist.zip ./dist # 打包成zip
+      #- name: Sync files
+      #  uses: SamKirkland/FTP-Deploy-Action@v4.3.4 # 上传到ftp服务器
+      #  with:
+      #    server: 10.52.0.x # 服务器地址
+      #    username: testusername # 服务器用户名
+      #    password: ${{ secrets.ftp_password }} # 服务器密码
