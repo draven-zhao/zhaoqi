@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          cat /etc/hosts && ls / && hostname -i
+          cat /etc/hosts && ls / && hostname -i && ping -c baidu.com
       #- name: Get latest code
       #  uses: actions/checkout@v3 # 拉取项目代码
       #- name: Setup node
