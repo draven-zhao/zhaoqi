@@ -7,11 +7,11 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          docker pull quay.io/cloudhut/kowl:master && \
+          docker pull fluent/fluent-bit && \
           docker images && \
           docker login --username=zhao513929178 registry.cn-beijing.aliyuncs.com -p zsc147258 && \
-          docker tag quay.io/cloudhut/kowl:master registry.cn-beijing.aliyuncs.com/zhaoqi_zq/kowl:master && \
-          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/kowl:master
+          docker tag fluent/fluent-bit registry.cn-beijing.aliyuncs.com/zhaoqi_zq/luent-bit:latest && \
+          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/luent-bit:latest
       #- name: Get latest code
       #  uses: actions/checkout@v3 # 拉取项目代码
       #- name: Setup node
