@@ -7,11 +7,11 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          docker pull cr.fluentbit.io/fluent/fluent-bit:1.9.3 && \
+          docker pull docker.redpanda.com/redpandadata/console:latest && \
           docker images && \
           docker login --username=zhao513929178 registry.cn-beijing.aliyuncs.com -p zsc147258 && \
-          docker tag cr.fluentbit.io/fluent/fluent-bit:1.9.3 registry.cn-beijing.aliyuncs.com/zhaoqi_zq/fluent-bit:1.9.3 && \
-          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/fluent-bit:1.9.3
+          docker tag docker.redpanda.com/redpandadata/console:latest registry.cn-beijing.aliyuncs.com/zhaoqi_zq/redpandadata_console:latest && \
+          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/redpandadata_console:latest
       #- name: Get latest code
       #  uses: actions/checkout@v3 # 拉取项目代码
       #- name: Setup node
