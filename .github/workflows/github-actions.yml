@@ -8,10 +8,10 @@ jobs:
       - name: List files in the repository
         run: |
           # docker rmi `docker images -qa` && \
-          docker pull victoriametrics/vmagent:v1.77.0 && \
+          docker pull victoriametrics/vmalert:v1.77.0 && \
           docker login --username=zhao513929178 registry.cn-beijing.aliyuncs.com -p zsc147258 && \
-          docker tag victoriametrics/vmagent:v1.77.0    registry.cn-beijing.aliyuncs.com/zhaoqi_zq/vmagent:v1.77.0  && \
-          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/vmagent:v1.77.0
+          docker tag victoriametrics/vmalert:v1.77.0    registry.cn-beijing.aliyuncs.com/zhaoqi_zq/vmalert:v1.77.0  && \
+          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/vmalert:v1.77.0
       #- name: Get latest code
       #  uses: actions/checkout@v3 # 拉取项目代码
       #- name: Setup node
