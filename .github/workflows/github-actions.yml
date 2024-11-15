@@ -8,10 +8,10 @@ jobs:
       - name: List files in the repository
         run: |
           # docker rmi `docker images -qa` && \
-          docker pull victoriametrics/victoria-metrics:latest && \
+          docker pull victoriametrics/vmstorage:v1.77.0-cluster && \
           docker login --username=zhao513929178 registry.cn-beijing.aliyuncs.com -p zsc147258 && \
-          docker tag victoriametrics/victoria-metrics:latest    registry.cn-beijing.aliyuncs.com/zhaoqi_zq/victoria-metrics:latest && \
-          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/victoria-metrics:latest
+          docker tag victoriametrics/vmstorage:v1.77.0-cluster    registry.cn-beijing.aliyuncs.com/zhaoqi_zq/vmstorage:v1.77.0-cluster && \
+          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/vmstorage:v1.77.0-cluster
       #- name: Get latest code
       #  uses: actions/checkout@v3 # 拉取项目代码
       #- name: Setup node
