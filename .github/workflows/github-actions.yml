@@ -8,10 +8,10 @@ jobs:
       - name: List files in the repository
         run: |
           # docker rmi `docker images -qa` && \
-          docker pull jimmidyson/configmap-reload:v0.9.0 && \
+          docker pull victoriametrics/vmalert:stable && \
           docker login --username=zhao513929178 registry.cn-beijing.aliyuncs.com -p zsc147258 && \
-          docker tag jimmidyson/configmap-reload:v0.9.0    registry.cn-beijing.aliyuncs.com/zhaoqi_zq/configmap-reload:v0.9.0  && \
-          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/configmap-reload:v0.9.0
+          docker tag victoriametrics/vmalert:stable    registry.cn-beijing.aliyuncs.com/zhaoqi_zq/vmalert:stable  && \
+          docker push registry.cn-beijing.aliyuncs.com/zhaoqi_zq/vmalert:stable
       #- name: Get latest code
       #  uses: actions/checkout@v3 # 拉取项目代码
       #- name: Setup node
