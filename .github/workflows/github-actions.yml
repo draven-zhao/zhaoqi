@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: rancher/hyperkube:v1.31.2-rancher2
-  dest_image: hyperkube:v1.31.2-rancher2
+  source_image: rancher/mirrored-flannel-flannel:v0.25.1
+  dest_image: mirrored-flannel-flannel:v0.25.1
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
