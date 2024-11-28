@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: quay.io/jetstack/cert-manager-cainjector:v1.16.2
-  dest_image: cert-manager-cainjector:v1.16.2
+  source_image: quay.io/jetstack/cert-manager-acmesolver:v1.16.2
+  dest_image: cert-manager-acmesolver:v1.16.2
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
