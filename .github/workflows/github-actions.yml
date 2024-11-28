@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: rancher/mirrored-k8s-dns-dnsmasq-nanny:1.23.0
-  dest_image: mirrored-k8s-dns-dnsmasq-nanny:1.23.0
+  source_image: rancher/mirrored-k8s-dns-sidecar:1.23.0
+  dest_image: mirrored-k8s-dns-sidecar:1.23.0
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
