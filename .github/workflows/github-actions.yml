@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: rancher/mirrored-metrics-server:v0.7.1
-  dest_image: mirrored-metrics-server:v0.7.1
+  source_image: noiro/cnideploy:6.1.1.1.81c2369
+  dest_image: cnideploy:6.1.1.1.81c2369
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
