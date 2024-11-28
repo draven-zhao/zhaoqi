@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: rancher/mirrored-pause:3.7
-  dest_image: mirrored-pause:3.7
+  source_image: rancher/nginx-ingress-controller:nginx-1.11.3-rancher1
+  dest_image: nginx-ingress-controller:nginx-1.11.3-rancher1
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
