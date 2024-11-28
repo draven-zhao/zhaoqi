@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: rancher/mirrored-coreos-etcd:v3.5.15
-  dest_image: mirrored-coreos-etcd:v3.5.15
+  source_image: rancher/rke-tools:v0.1.105
+  dest_image: rke-tools:v0.1.105
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
