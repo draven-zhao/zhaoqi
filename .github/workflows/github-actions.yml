@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: noiro/aci-containers-host:6.1.1.1.81c2369
-  dest_image: aci-containers-host:6.1.1.1.81c2369
+  source_image: noiro/opflex:6.1.1.1.81c2369
+  dest_image: opflex:6.1.1.1.81c2369
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
