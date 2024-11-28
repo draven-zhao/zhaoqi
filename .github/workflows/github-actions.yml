@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: rancher/mirrored-calico-kube-controllers:v3.28.1
-  dest_image: cmirrored-calico-kube-controllers:v3.28.1
+  source_image: rancher/mirrored-calico-ctl:v3.28.0
+  dest_image: mirrored-calico-ctl:v3.28.0
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
