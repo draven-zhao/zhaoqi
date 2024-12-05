@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: quay.io/external_storage/cephfs-provisioner:latest
-  dest_image: cephfs-provisioner:latest
+  source_image: gmoney23/nfs-client-provisioner:latest
+  dest_image: nfs-client-provisioner:latest
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
