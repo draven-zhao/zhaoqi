@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: ceph/daemon:latest
-  dest_image: ceph-daemon:latest
+  source_image: gcr.io/kubernetes-helm/tiller:v2.14.2
+  dest_image: tiller:v2.14.2
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
