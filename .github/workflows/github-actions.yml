@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: quay.io/external_storage/rbd-provisioner:latest
-  dest_image: rbd-provisioner:latest
+  source_image: kubesphere/rbd-provisioner:v2.1.1-k8s1.11
+  dest_image: rbd-provisioner:v2.1.1-k8s1.11
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
