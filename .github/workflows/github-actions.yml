@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: minio/mc:RELEASE.2019-08-07T23-14-43Z
-  dest_image: mc:RELEASE.2019-08-07T23-14-43Z
+  source_image: kubesphere/ks-installer:v3.2.1
+  dest_image: kubesphere-ks-installer:v3.2.1
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
