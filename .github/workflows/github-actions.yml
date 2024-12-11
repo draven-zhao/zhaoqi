@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: rancher/rancher-agent:v2.5.7
-  dest_image: rancher-rancher-agent:v2.5.7
+  source_image: rancher/rke-tools:v0.1.72
+  dest_image: rancher-rke-tools:v0.1.72
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
