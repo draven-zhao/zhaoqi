@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: rancher/rke-tools:v0.1.72
-  dest_image: rancher-rke-tools:v0.1.72
+  source_image: radondb/chronus-operator:2.1.3
+  dest_image: radondb-chronus-operator:2.1.3
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
