@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: bitnami/redis:7.4.1-debian-12-r2
-  dest_image: bitnami-redis:7.4.1-debian-12-r2
+  source_image: bitnami/redis:4.0.8-r2
+  dest_image: bitnami-redis:4.0.8-r2
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
