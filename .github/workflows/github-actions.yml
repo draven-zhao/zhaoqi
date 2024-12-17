@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: clickvisual/clickvisual:latest
-  dest_image: clickvisual-clickvisual:latest
+  source_image: mysql:5.7.14
+  dest_image: mysql:5.7.14
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
