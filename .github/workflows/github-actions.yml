@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: mysql:5.7
-  dest_image: mysql:5.7
+  source_image: bitnami/redis:7.4.1-debian-12-r2
+  dest_image: bitnami-redis:7.4.1-debian-12-r2
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
@@ -13,12 +13,12 @@ jobs:
         run: |
           # docker rmi `docker images -qa` && \
           echo $source_image $dest_image && \
-          docker images -qa |xargs docker rmi -f && \
-          docker images
-          #docker pull $source_image && \
-          #docker login --username=zhao513929178 registry.cn-beijing.aliyuncs.com -p zsc147258 && \
-          #docker tag $source_image    registry.cn-beijing.aliyuncs.com/$namespace/$dest_image  && \
-          #docker push registry.cn-beijing.aliyuncs.com/$namespace/$dest_image
+          #docker images -qa |xargs docker rmi -f && \
+          #docker images
+          docker pull $source_image && \
+          docker login --username=zhao513929178 registry.cn-beijing.aliyuncs.com -p zsc147258 && \
+          docker tag $source_image    registry.cn-beijing.aliyuncs.com/$namespace/$dest_image  && \
+          docker push registry.cn-beijing.aliyuncs.com/$namespace/$dest_image
       #- name: Get latest code
       #  uses: actions/checkout@v3 # 拉取项目代码
       #- name: Setup node
