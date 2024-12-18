@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: bitnami/kafka:3.4.0-debian-11-r33
-  dest_image: bitnami-kafka:3.4.0-debian-11-r33
+  source_image: confluentinc/cp-kafka:4.1.2-2
+  dest_image: bconfluentinc-cp-kafka:4.1.2-2
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
