@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: confluentinc/cp-kafka:4.1.2-2
-  dest_image: bconfluentinc-cp-kafka:4.1.2-2
+  source_image: kubesphere/ks-apiserver:latest
+  dest_image: kubesphere-ks-apiserver:latest
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
