@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: wurstmeister/kafka:2.13-2.7.0 
-  dest_image: wurstmeister-kafka:2.13-2.7.0 
+  source_image: victoriametrics/victoria-metrics:v1.34.3
+  dest_image: victoriametrics-victoria-metrics:v1.34.3
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
