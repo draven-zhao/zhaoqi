@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: nacos/nacos-server:latest
-  dest_image: nacos-nacos-server:latest
+  source_image: nacos/nacos-peer-finder-plugin:1.1
+  dest_image: nacos-nacos-peer-finder-plugin:1.1
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
