@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: demisto/openssh:1.0.0.56444
-  dest_image: openssh:1.0.0.56444
+  source_image: lukech/wiredtiger:ubuntu1804
+  dest_image: wiredtiger:ubuntu1804
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
