@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: lukech/wiredtiger:ubuntu1804
-  dest_image: wiredtiger:ubuntu1804
+  source_image: omesser/elasticdump:2.4.2
+  dest_image: omesser-elasticdump:2.4.2
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
