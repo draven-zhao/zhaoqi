@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: demisto/jq:1.0.0.117497
-  dest_image: demisto-jq:1.0.0.117497
+  source_image: nanozoo/jq:1.6--0bafc15
+  dest_image: nanozoo-jq:1.6--0bafc15
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
