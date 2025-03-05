@@ -2,9 +2,9 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: nanozoo/jq:1.6--0bafc15
-  dest_image: nanozoo-jq:1.6--0bafc15
-  namespace: rancher_zhao
+  source_image: flannel:v0.26.4
+  dest_image: flannel:v0.26.4
+  namespace: zhaoqi_zq
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
