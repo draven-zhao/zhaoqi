@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: bitnami/metrics-server:0.7.2
-  dest_image: metrics-server:v0.7.2
+  source_image: jettech/kube-webhook-certgen:v1.5.0
+  dest_image: kube-webhook-certgen:v1.5.0
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
