@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: busybox
-  dest_image: busybox
+  source_image: metrics-server:v0.7.2
+  dest_image: metrics-server:v0.7.2
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
