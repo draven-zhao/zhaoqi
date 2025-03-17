@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: nginx
-  dest_image: nginx
+  source_image: busybox
+  dest_image: busybox
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
