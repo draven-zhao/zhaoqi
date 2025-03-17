@@ -2,7 +2,7 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: metrics-server:v0.7.2
+  source_image: bitnami/metrics-server:0.7.2
   dest_image: metrics-server:v0.7.2
   namespace: rancher_zhao
 jobs:
