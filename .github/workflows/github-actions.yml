@@ -2,9 +2,9 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: flannel/flannel-cni-plugin:v1.6.2-flannel1
-  dest_image: flannel-cni-plugin:v1.6.2-flannel1
-  namespace: zhaoqi_zq
+  source_image: nginx
+  dest_image: nginx
+  namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
