@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: bitnami/nginx-ingress-controller:1.12.0
-  dest_image: nginx-ingress-controller:1.12.0
+  source_image: fluent/fluent-bit:2.2.2-arm64v8
+  dest_image: fluent-bit:2.2.2-arm64v8
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
