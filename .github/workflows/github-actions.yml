@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: fluent/fluent-bit:1.9.10
-  dest_image: fluent-bit:1.9.10
+  source_image: fluent/fluent-bit:1.9.10-debug
+  dest_image: fluent-bit:1.9.10-debug
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
