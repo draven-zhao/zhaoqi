@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: ceph/ceph:v14.2.4-20190917
-  dest_image: ceph-ceph:v14.2.4-20190917
+  source_image: docker.io/rook/ceph:v1.17.4
+  dest_image: rook-ceph:v1.17.4
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
