@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: quay.io/k8scsi/csi-node-driver-registrar:v1.1.0
-  dest_image: csi-node-driver-registrar:v1.1.0
+  source_image: wurstmeister/kafka:2.13-2.8.1
+  dest_image: kafka:2.13-2.8.1
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
