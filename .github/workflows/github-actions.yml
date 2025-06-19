@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          docker rmi $(docker images -q)  && docker images
+          docker images -qa
           #echo $source_image $dest_image && \
           #docker pull $source_image && \
           #docker login --username=zhao513929178 registry.cn-beijing.aliyuncs.com -p zsc147258 && \
