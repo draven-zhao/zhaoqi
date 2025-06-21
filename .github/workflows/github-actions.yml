@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: tomcat:7
-  dest_image: tomcat:7
+  source_image: jenkins/jenkins:lts
+  dest_image: jenkins:lts
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
