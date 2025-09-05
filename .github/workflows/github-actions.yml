@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: jenkins/jenkins
-  dest_image: jenkins:v1
+  source_image: netdata/agent-sd:v0.2.10
+  dest_image: netdata-agent-sd:v0.2.10
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
