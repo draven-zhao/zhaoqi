@@ -2,7 +2,7 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: elasticsearch/elasticsearch:8.5.1
+  source_image: elasticsearch:8.5.1
   dest_image: elasticsearch:8.5.1
   namespace: rancher_zhao
 jobs:
