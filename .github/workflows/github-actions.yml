@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: registry.k8s.io/sig-storage/csi-provisioner:v5.2.0
-  dest_image: csi-provisioner:v5.2.0
+  source_image: registry.k8s.io/sig-storage/csi-attacher:v4.8.1
+  dest_image: csi-attacher:v4.8.1
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
