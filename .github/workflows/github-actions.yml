@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: elasticsearch:8.5.1
-  dest_image: elasticsearch:8.5.1
+  source_image: registry.k8s.io/sig-storage/csi-resizer:v1.13.2
+  dest_image: csi-resizer:v1.13.2
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
