@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.13.0
-  dest_image: csi-node-driver-registrar:v2.13.0
+  source_image: ceph/ceph:v14.2.9
+  dest_image: ceph:v14.2.9
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
