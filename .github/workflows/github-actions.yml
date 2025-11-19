@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: bitnami/rabbitmq:3.13.6-debian-12-r1
-  dest_image: rabbitmq:3.13.6-debian-12-r1
+  source_image: rabbitmqoperator/cluster-operator:2.14.0
+  dest_image: rabbitmq-cluster-operator:2.14.0
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
