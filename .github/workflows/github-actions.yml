@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: langgenius/dify-plugin-daemon:0.4.1-local
-  dest_image: langgenius-dify-plugin-daemon:0.4.1-local
+  source_image: langgenius/dify-api:1.10.0
+  dest_image: langgenius-dify-api:1.10.0
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
