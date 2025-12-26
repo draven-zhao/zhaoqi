@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: cnxc/dm8:20250423-kylin
-  dest_image: cnxc-dm8:20250423-kylin
+  source_image: milvusdb/milvus:v2.6.7
+  dest_image: milvusdb-milvus:v2.6.7
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
