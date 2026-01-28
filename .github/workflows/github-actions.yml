@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: milvusdb/milvus:v2.6.7
-  dest_image: milvusdb-milvus:v2.6.7
+  source_image: vinlic/deepseek-free-api:latest
+  dest_image: vinlic-deepseek-free-api:latest
   namespace: rancher_zhao
 jobs:
   Explore-GitHub-Actions:
