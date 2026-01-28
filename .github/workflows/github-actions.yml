@@ -4,7 +4,7 @@ on: [push]
 env:
   source_image: vinlic/deepseek-free-api:latest
   dest_image: vinlic-deepseek-free-api:latest
-  namespace: rancher_zhao
+  namespace: zhaoqi_zq
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
