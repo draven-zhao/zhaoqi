@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: vinlic/deepseek-free-api:latest
-  dest_image: deepseek-api:latest
+  source_image: elasticsearch:8.11.0
+  dest_image: elasticsearch:8.11.0
   namespace: zhaoqi_zq
 jobs:
   Explore-GitHub-Actions:
