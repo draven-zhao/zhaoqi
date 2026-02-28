@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: elasticsearch:8.11.0
-  dest_image: elasticsearch:8.11.0
+  source_image: milvusdb/milvus:v2.6.11
+  dest_image: milvus:v2.6.11
   namespace: zhaoqi_zq
 jobs:
   Explore-GitHub-Actions:
