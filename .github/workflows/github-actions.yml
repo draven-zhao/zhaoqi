@@ -2,8 +2,8 @@ name: Docker Image
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  source_image: ubuntu:22.04
-  dest_image: ubuntu:22.04
+  source_image: feixitek/multielasticdump:v1.0.0
+  dest_image: multielasticdump:v1.0.0
   namespace: zhaoqi_zq
 jobs:
   Explore-GitHub-Actions:
